@@ -3,3 +3,21 @@ def square(side, character):
         print(side * character)
     
 square(5, '%')
+
+
+
+OR using the line function from line printer:
+
+
+def line(length, character):
+    if character == '':
+        text = length * '*'
+    else:
+        text = length * character[0]
+    return text
+
+def square(side, character):
+    for i in range(side):
+        print(line(side, character))
+
+square(4, '#')
