@@ -1,0 +1,5 @@
+def square(side, character):
+    for i in range(side):
+        print(side * character)
+    
+square(5, '%')
