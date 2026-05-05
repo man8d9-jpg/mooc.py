@@ -1,0 +1,13 @@
+learned: .split() function breaks a sentence into a list of words
+
+sentence = input().split()
+def first_word(word1):
+    return word1[0]
+def second_word(word2):
+    return word2[1]
+def last_word(wordL):
+    return wordL[-1]
+
+print(first_word(sentence)) 
+print(second_word(sentence))
+print(last_word(sentence)) 
