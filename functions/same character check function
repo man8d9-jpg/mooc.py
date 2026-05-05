@@ -1,0 +1,10 @@
+def same_characters(alphabet, a, b):
+    if a >= len(alphabet) or b >= len(alphabet):
+        return False
+    if alphabet[a] == alphabet[b]:
+        return True
+    
+    else:
+        return False
+    
+print(same_characters('mathematics', 0, 6))
