@@ -1,3 +1,10 @@
+# Problem: Triangle + Rectangle shape
+# Learned: how to reuse a function (line) inside another function
+# Learned: difference between changing value (i) vs fixed value (size)
+# Mistake: used height instead of size for rectangle width initially
+
+
+
 def line(length, character):
     if character == '':
         text = length * '*'
