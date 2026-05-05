@@ -1,0 +1,14 @@
+learned: len() + 1 to add item value one greater than the one last added item value in a list.
+
+
+list = []
+while True:
+    print(f'The list is now {list}')
+    condition = input('a(d)d, (r)emove or e(x)it: ')
+    if condition == 'd':
+         list.append(len(list) + 1)
+    elif condition == 'r':
+        list.pop()
+    elif condition == 'x':
+        print('Bye!')
+        break
