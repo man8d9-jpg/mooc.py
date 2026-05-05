@@ -1,0 +1,11 @@
+learned: sorted() returns the sorted copy of the original list. 
+
+
+list = []
+item = int(input('New item: '))
+while item != 0:
+    list.append(item)
+    print(f'The list now: {list}')
+    print(f'The list in order: {sorted(list)}')
+    item = int(input('New item: '))
+print('Bye!')
