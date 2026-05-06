@@ -1,0 +1,9 @@
+learned: 
+         1. sorted() works on anything iterable
+         2. .split() returns list with spaces
+
+
+  def anagrams(word1, word2):
+    return sorted(word1) == sorted(word2)
+
+print(anagrams('team', 'tame'))
