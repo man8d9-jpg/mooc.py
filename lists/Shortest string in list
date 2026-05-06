@@ -2,7 +2,7 @@ Learned:
         Store a string itself to compare with others.
         
 Confusion:
-          What to compare other strings in a list from.  
+          Should helper variable store the string itself or just its length?  
         
     
 
