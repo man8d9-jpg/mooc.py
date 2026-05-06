@@ -1,0 +1,9 @@
+learned: ": data_type" in arguments to specify the input data type
+
+
+def mean(list : list):
+    return sum(list) / len(list)
+
+my_list = [1, 2, 3, 4, 5]
+result = mean(my_list)
+print("mean value is", result)
