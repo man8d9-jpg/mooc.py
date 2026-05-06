@@ -1,0 +1,17 @@
+Learned: 
+        Store a string itself to compare with others.
+        
+Confusion:
+          What to compare other strings in a list from.  
+        
+    
+
+def shortest(collection : list):
+    least = collection[0]
+    for i in collection:
+        if len(i) < len(least):
+            least = i
+    return least
+
+my_list = ['hello', 'laptop', 'hi', 'refrigerator' ]
+print(shortest(my_list))
