@@ -1,0 +1,24 @@
+Learned: 
+         1. set() gets rid of duplicates
+         2. Sets don’t guarantee order
+
+
+
+def distinct_numbers(values : list):
+    return sorted(list(set(values)))
+    
+my_list = [ 1,1,2,3,5,6,3 ]
+print(distinct_numbers(my_list))
+
+# OR MANUALLY:
+
+def distinct_numbers(values : list):
+    new_list = []
+    for i in values:
+        if i not in new_list:
+            new_list.append(i)
+    new_list.sort()
+    return new_list
+
+my_list = [ 1,1,2,3,5,6,3 ]
+print(distinct_numbers(my_list))
