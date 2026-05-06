@@ -1,0 +1,6 @@
+def list_of_stars(stars : list):
+    for i in stars:
+        print(i * '*')
+
+star = [3, 7, 1, 1, 2]
+list_of_stars(star)
