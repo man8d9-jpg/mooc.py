@@ -1,0 +1,14 @@
+# Learned: return should come after loop finishes
+# Mistake: wrong indentation caused early return
+
+
+
+def even_numbers(list1 : list):
+        list2 = []
+        for i in list1:
+            if i % 2 == 0:
+                  list2.append(i)
+        return list2
+            
+my_list = [1,2,3,4,5]
+print(even_numbers(my_list))
