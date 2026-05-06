@@ -1,5 +1,5 @@
 num = int(input('Please type in a positive integer: '))
-for num in range(-num, num):
+for i in range(-num, num):
     if num == 0:
         continue
-    print(num)
+    print(i)
