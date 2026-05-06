@@ -1,0 +1,12 @@
+Mistake:
+         put value of i in longest instead of len(i) (line 7) 
+
+def length_of_longest(collection : list):
+    longest = len(collection[0])
+    for i in collection:
+        if len(i) > longest:
+            longest = len(i)
+    return longest
+
+my_list = ['hello', 'laptop', 'hi', 'refrigerator' ]
+print(length_of_longest(my_list))
