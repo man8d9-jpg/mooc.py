@@ -1,0 +1,15 @@
+Learned: 
+         range(len(list)) - iterate through indexes of a list.
+
+
+
+def list_sum(list1 : list, list2 : list):
+    list3 = []
+    for i in range(len(list1)):
+            sum = list1[i] + list2[i]
+            list3.append(sum)
+    return list3
+
+my_list = [2,4,6]
+your_list = [1,3,5]
+print(list_sum(my_list, your_list))
