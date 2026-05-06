@@ -1,0 +1,16 @@
+Learned: 
+          1. Logic always first.
+          2. if something: is the same as if true: or if False:
+
+
+def palindromes(word : str):
+    return word == word[::-1]
+       
+while True: 
+    word1 = input('Please type in a palindrome: ')
+    palindromes(word1)
+    if palindromes(word1):
+        print(f'{word1} is a palindrome!')
+        break
+    else:
+        print("that wasn't a palindrome")
