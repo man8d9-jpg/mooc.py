@@ -1,0 +1,5 @@
+def range_of_list(list: list):
+    return max(list) - min(list)
+
+my_list = [20,50,10,90]
+print(range_of_list(my_list))
