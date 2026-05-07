@@ -1,0 +1,28 @@
+Learned :
+           1. Create a new list containing only the string with longest length and add the strings with same length in it.
+           2. new_list = [i]  ---->  creates a list contaning i only.
+              new_list = list(i) ----> creates a list of characters of i
+
+
+
+ 
+def all_the_longest(collection: list):
+    longest = collection[0]
+    new_list = []
+
+    for i in collection:
+        if len(i) > len(longest):
+            longest = i
+            new_list = [i]
+
+        elif len(i) == len(longest):
+            new_list.append(i)
+
+    return new_list
+
+
+my_list = ['adele', 'mark', 'dorothy', 'tim', 'hedy', 'richard']
+print(all_the_longest(my_list))
+
+
+
