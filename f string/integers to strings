@@ -1,0 +1,14 @@
+learned: 
+          1. f" creates a string.
+          2. :.(number of decimals)f to specify number of decimals in a float value. 
+
+
+
+def formatted(nums : list):
+    new_list = []
+    for num in nums:
+        new_list.append(f"{num:.2f}")
+    return new_list
+    
+my_list = [1.7543, 3.546, 4.999999, 3.256]
+print(formatted(my_list))
