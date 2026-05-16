@@ -1,0 +1,13 @@
+def most_common_character(word : str):
+    most = word[0]
+    highest_count = 0
+    for char in word:
+        count = (word.count(char))
+        
+        if count > highest_count:
+            highest_count = count
+            most = char
+    return most
+string = 'hobbit'
+print(most_common_character(string))
+
