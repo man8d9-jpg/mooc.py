@@ -1,0 +1,35 @@
+Learned: 
+         1. .reverse() reverses the list internally and returns NONE
+         2. reversed() returns reverse iterator, list(revesed()) makes a reversed list.
+
+
+
+
+
+def everthing_reversed(values : list):
+    new_list = []
+    for i in values:
+        new_list.append(i[::-1])
+    new_list.reverse()
+    return new_list
+
+my_list = ['Hello', 'Arnold', 'Jacob', 'Android']
+print(everthing_reversed(my_list))
+
+
+
+OR
+
+
+
+def everthing_reversed(values : list):
+    new_list = []
+    for i in values:
+        new_list.append(i[::-1])
+    reversed_list = list(reversed(new_list)) 
+    return reversed_list
+
+my_list = ['Hello', 'Arnold', 'Jacob', 'Android']
+print(everthing_reversed(my_list))
+
+
