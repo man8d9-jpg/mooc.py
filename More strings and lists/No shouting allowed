@@ -1,0 +1,9 @@
+def no_shouting(list_of_words : list):
+    new_list = []
+    for word in list_of_words:
+        if not word.isupper():
+            new_list.append(word)
+    return new_list
+
+my_list = ["ABC", "def", "UPPER", "ANOTHERUPPER", "lower", "another lower", "Capitalized"]
+print(no_shouting(my_list))
