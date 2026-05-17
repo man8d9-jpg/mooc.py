@@ -1,0 +1,32 @@
+Learned:
+          .replace() needs to be stored in a variable to use.
+
+
+
+
+
+def no_vowels(sentence : str):
+    new_string = sentence
+    for char in 'auioe':
+        if char in sentence:
+            new_string = new_string.replace(char, '')
+    return new_string
+
+my_string = 'hebrew is an ugly language'
+print(no_vowels(my_string))
+
+
+
+OR
+
+
+
+def no_vowels(sentence : str):
+    new_string = ''
+    for char in sentence:
+        if char not in 'auieo':
+            new_string = new_string + char 
+    return new_string 
+
+my_string = 'hebrew is an ugly language'
+print(no_vowels(my_string))
