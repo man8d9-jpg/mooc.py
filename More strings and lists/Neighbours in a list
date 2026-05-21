@@ -1,0 +1,22 @@
+Learned:
+         1. To loop through index of a list, use len(list) - 1
+         2. abs(a-b) always returns a positive value
+
+
+
+
+
+def longest_series_of_neighbours(neighbours : list):
+    current = 1
+    longest = 1
+    for i in range(len(neighbours) - 1 ):
+        if abs(neighbours[i] - neighbours[i+1]) == 1:
+            current += 1
+        else:
+            current = 1
+        if current > longest:
+            longest = current
+    return longest
+
+my_list = [1,2,5,7,6,5,6,3,4,1,0]
+print(longest_series_of_neighbours(my_list))
