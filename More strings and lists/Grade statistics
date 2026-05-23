@@ -1,0 +1,62 @@
+def exercise_points(exercises: int):
+        exercise_points = exercises // 10 
+        return exercise_points
+
+def grade(exam_points: int, total_points: int):
+        if exam_points < 10:
+                return 0
+        elif total_points <= 14:
+                return 0
+        elif total_points <= 17:
+                return 1
+        elif total_points <= 20:
+                return 2
+        elif total_points <= 23:
+                return 3
+        elif total_points <= 27:
+                return 4
+        elif total_points <= 30:
+                return 5
+
+totals = []
+grades = []
+while True:
+        value = (input("Exam points and exercises completed: "))
+        if value == '':
+                break
+        
+        parts = value.split()
+        exam = int(parts[0])
+        exercises = int(parts[1])
+        
+        exercise_pts = exercise_points(exercises)
+        total = exam + exercise_pts
+        final_grade = grade(exam, total)
+
+        totals.append(total)
+        grades.append(final_grade)
+
+average = sum(totals) / len(totals)
+passed = 0
+for g in grades:
+        if g > 0:
+                passed += 1
+
+passed_percentage = passed / len(grades) * 100 
+
+
+print("Statistics: ")
+print(f"Points average: {average}")
+print(f"Pass percentage: {passed_percentage:.1f}")
+print("Grade distribution: ")
+for i in range(5,-1,-1):
+        stars = grades.count(i) * '*'
+        print(f"{i}: { stars}") 
+
+        
+
+
+
+        
+        
+        
