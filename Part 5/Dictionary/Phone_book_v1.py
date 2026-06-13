@@ -1,6 +1,6 @@
+Pbook = {}
 while True:
-    Pbook = {}
-    options = input("command(1 search, 2 add, 3 quit): ")
+    options = int(input("command(1 search, 2 add, 3 quit): "))
 
     if options == 3:
         print("quitting...")
@@ -8,22 +8,20 @@ while True:
     
     elif options == 2:
         name = input("name: ")
-        number = input("number: ")
+        number = int(input("number: "))
 
-        Pbook['Nombre'] = name
-        Pbook['Numero'] = number
+        Pbook[name] = number
 
         print("ok!")
     
     elif options == 1:
         Name = input("name: ")
         
-        for key, value in Pbook.items():
-            if key == Name:
-                print(value)
+        if Name in Pbook:
+            print(Pbook[Name])
 
-            else:
-                print("no number")
+        else:
+            print("no number")
 
-        
+
 
