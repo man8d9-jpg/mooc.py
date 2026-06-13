@@ -1,6 +1,6 @@
-Learned: 
-          1. Logic always first.
-          2. if something: is the same as if true: or if False:
+# Learned: 
+#           1. Logic always first.
+#           2. if something: is the same as if true: or if False:
 
 
 def palindromes(word : str):
