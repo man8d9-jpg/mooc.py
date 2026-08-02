@@ -8,7 +8,7 @@ def factorials(n: int):
         fac_dictionary[i] = fact
     return fac_dictionary
 
-k = factorials(5)
+k = factorials(5)   
 print(k[1])
 print(k[3])
-print(k[5])
+print(k[5]) 

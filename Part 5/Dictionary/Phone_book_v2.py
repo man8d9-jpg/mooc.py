@@ -5,13 +5,13 @@ while True:
     if options == "3":
         print("quitting...")
         break
-    
+        
     elif options == "2":
         name = input("name: ")
-        number = (input("number: "))
+        number = (input("number: "))           
 
         if name not in Pbook:
-            Pbook[name] = []
+            Pbook[name] = [] 
 
         Pbook[name].append(number)
         print("ok!")
